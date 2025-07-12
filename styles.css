@@ -295,16 +295,46 @@ a {
     text-align: center;
 }
 
+
+.whole-container{
+    min-height: 750px;
+    margin-top: -2px;
+    display: block;
+}
+
+
+.whole-container .second-row-wrapper{
+    margin: 83px auto 0;
+    max-width: 1600px
+}
 .second-row{
+    display: -webkit-flex;
+    display: flexbox;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
     flex-direction: row;
-    flex-wrap: wrap; 
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-direction: normal;
 }
 .second-row .second-left{
     vertical-align: top;
     padding: 20px 0 0;
 }
+/* .second-row .second-left::after{
+
+} */
 .second-row .second-left .s-left-list{
     padding-left: 0;
     font-size: 14px;
@@ -313,8 +343,39 @@ a {
     margin: 0 0 0 25px;
     vertical-align: top;
     list-style-type: none;
+    line-height: 1;
 }
 .s-left-list .item1{
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    text-transform: capitalize;
+    line-height: 1;
+    list-style-type: none;
+
+}
+/* .s-left-list .item1 .item-a{
+    margin-right: 5px;
+    text-decoration: none;
+} */
+
+
+
+.s-left-list .item1 .item-s{
+    color: #282c3f;
+    text-transform: capitalize;
+}
+
+.s-left-list .item-s::after{
+    font-size: 14px;
+    content: "/";
+    margin-left: 5px;
+    color: #282c3f;
+}
+
+.s-left-list .item2{
+    font-weight: 700;
     font-size: 14px;
     display: inline-block;
     margin-right: 5px;
@@ -323,7 +384,753 @@ a {
     list-style-type: none;
 
 }
-.s-left-list .item1 .item-s{
+
+.s-left-list .item2 .item-sm{
+    font-size: 14px;
+    margin: 0px;
     color: #282c3f;
     text-transform: capitalize;
+    text-decoration: none;
 }
+.third-row{
+    display: -webkit-flex;
+    display: flexbox;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-direction: normal;
+}
+.third-row::after{
+    clear: both;
+    content: " ";
+    display: table;
+}
+.third-row .title-container{
+    margin: 10px 0 5px 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 1000px;
+    overflow: hidden;
+}
+.third-row .title-container h1{
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #282c3f;
+    max-width: 400px;
+    text-transform: capitalize;
+}
+.third-row .title-container .tshirt-span{
+    color: #878b94;
+    white-space: pre-wrap;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+}
+.main-body{
+    -webkit-box-direction: normal;
+    display: flexbox;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    display: -webkit-flex;
+}
+.main-body .side-bar{
+    -webkit-box-orient: vertical;
+    align-self: flex-start;
+    -webkit-box-direction: normal;
+    min-width: 252px;
+    max-width: 252px;
+    -webkit-box-flex: 0 !important;
+    flex-grow: 0 !important;
+    flex: 1 1 0%;
+}
+
+.main-body .side-bar .side-bar-child{
+    box-sizing: border-box;
+    position: static;
+    transition: margin .2s cubic-bezier(.25,.46,.45,.94);
+    margin-top: 0;
+    padding-top: 23px;
+
+}
+.side-bar-child .filters{
+    
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border-bottom: 1px solid #e9e9ed;
+    position: relative;
+    border-right: 1px solid #edebef;
+}
+.side-bar-child .header-container{
+    position: relative;
+    border-right: none !important;
+    padding-top: 0;
+}
+
+
+.side-bar-child .filter-title{
+    font-weight: 700;
+}
+.categories-container{
+    position: relative;
+}
+.category-title{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 0 18px;
+    clear: both;
+    color: #282c3f;
+    display: block;
+
+}
+.category-list{
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    
+}
+ .category-list li{
+    font-size: 14px;
+    margin-bottom: 7px;
+
+}
+ .category-list .list2{
+    font-size: 14px;
+    margin-bottom: 0;
+
+}
+
+
+.category-list .category-label{
+    display: block;
+    width: 95%;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 17px;
+    color: #282c3f;
+    position: relative;
+}
+
+.category-label input[type="checkbox"]{
+    padding: 0;
+    margin: 0 16px 0 0;
+    visibility: hidden;
+}
+
+.category-label .cat-number{
+    white-space: nowrap;
+    cursor: pointer;
+    color: #94969f;
+    font-size: 11px;
+    margin-left: 4px;
+
+}
+ .checkbox-indicate{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #c3c2c9;
+    background: #fff;
+    border-radius: 2px;
+}
+ .checkbox-indicate::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 1;
+    width: 8px;
+    height: 5px;
+    border-color: #fff;
+    border-style: none none solid solid;
+    border-width: 2px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.brand-container{
+    position: relative;
+}
+.searchbox-filter{
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    width: 30px;
+    height: 30px;
+    background-color: #f5f5f6;
+    border-radius: 50%;
+}
+.search-icon-filter{
+    background: url(https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png);
+    background-size: 1404px 105px;
+    width: 21px;
+    height: 21px;
+    background-position: -754px 0;
+    right: 4px;
+    top: 4px;
+    -webkit-transform: scale(.7);
+    transform: scale(.7);
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+}
+.brand-container .brand-more{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #ff3f6c;
+    margin-left: 27px;
+}
+.price-container .slider-bar{
+    margin: 12px 0 4px;
+}
+.price-container .slider-bar .slider-root{
+        width: 200px;
+        margin-right: 16px;
+}
+.slider-root .slider-rootrail{
+    position: relative;
+    height: 12px;
+    background-color: #fff;
+}
+.slider-root .slider-rootrail .root-railbar{
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #d4d5d9;
+}
+.slider-root .slider-rootrail .root-railrange{
+    position: absolute;
+    /* top: 10px; */
+    height: 2px;
+    top: 5px;
+    background-color: #ff3f6c;
+    left: 0px;
+    right: 0px;
+}
+.price{
+     margin-bottom: 0;
+}
+.slider-rootrail .thumb-left{
+    left: 0px;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #ff3f6c;
+    outline: none;
+    transform: translateX(-75%);
+
+}
+.thumb-dot{
+    background: #fff;
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+.slider-rootrail .thumb-right{
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #ff3f6c;
+    outline: none;
+    left: 200px;
+    transform: translateX(-25%);
+}
+.slider-root .slider-dot{
+    margin: 10px -4px 0 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.color-container .color-list{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+} 
+.color-list .color-listitem{
+    display: block;
+    position: relative;
+    margin: 0 10px 0 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 7px;
+    list-style: none;
+}
+.color-label{
+    position: relative;
+    cursor: pointer;
+}
+.color-label .color-circle{
+    position: relative;
+    /* height: 100%; */
+    line-height: 16px;
+    vertical-align: top;
+    background-color: rgb(54, 69, 79);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 27px;
+}
+.color-label .color-num{
+    color: #94969f;
+    font-size: 11px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.color-label .color-circle.white{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #d6d6d6;
+
+}
+.color-label .color-circle.blue{
+    background-color: rgb(0, 116, 217);
+}
+.color-label .color-circle.green{
+    background-color: rgb(94, 177, 96);
+}
+.color-label .color-circle.navy{
+        background-color: rgb(60, 68, 119);
+}
+.color-label .color-circle.grey{
+   background-color: rgb(159, 168, 171);
+}
+.color-label .color-circle.red{
+    background-color: rgb(211, 75, 86);
+}
+
+.color-more{
+    margin-left: 27px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: block;
+}
+.color-more .clr-more{
+    display: block;
+    font-size: 15px;
+    color: #ff3f6c;
+}
+
+.category-label .checkbox-indicate.coin{
+    border-radius: 50%;
+}
+
+.right-container{
+    -webkit-box-flex: 1;
+    flex: 1 1 0%;
+    padding-left: 0;
+    -webkit-box-direction: normal;
+    align-self: flex-start;
+    -webkit-box-orient: vertical;
+}
+.right-container .above-card{
+    display: -webkit-flex;
+    display: flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    -webkit-box-direction: normal;
+
+}
+.above-card .horiz-bar{
+    width: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    border-bottom: 1px solid #eaeaec;
+    padding-bottom: 15px;
+    padding-top: 23px;
+    display: block;
+
+}
+.horiz-bar .horiz-bar-child{
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.horiz-bar-child .sort-by{
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-top: -7px;
+    position: relative;
+    top: 5px;
+
+}
+.horiz-bar-child .sort-by .sortby-child{
+
+    display: block;
+}
+
+.horiz-bar-child .sort-by .sortby-child .sort-by-box{
+    padding: 9px 14px;
+    font-size: 14px;
+    color: #282c3f;
+    cursor: pointer;
+    position: relative;
+    width: 255px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #d4d5d9;
+}
+.sort-by-box .rec{
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #282c3f;
+    font-size: 14px;
+    cursor: pointer;
+}
+.sort-by-box .down-arrow{
+    margin-left: 5px;
+    margin-top: 5px;
+    float: right;
+    background: url(https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png);
+    background-size: 1404px 105px;
+    display: inline-block;
+    background-position: -367px -1px;
+    width: 15px;
+    height: 10px;
+}
+.bundles{
+    display: block;
+}
+.bundles .bundles-filters{
+
+    padding-left: 0;
+    font-size: 14px;
+    display: flex;
+    color: #282c3f;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    margin: -10px 0 0 16px;
+    list-style: none;
+}
+.bundles .bundles-filters li{
+    margin-right: 4px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.bundles .bundles-filters .bundle-label{
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    padding: 5px 8px 5px 10px;
+
+}
+.bundles .bundles-filters .bundle-label h4{
+    padding-left: 0;
+    font-weight: 400;
+    margin: 0;
+    display: inline-block;
+}
+.bundles .bundles-filters .bundle-label .bundle-arrow{
+    background: url(https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png);
+    background-size: 1404px 105px;
+    display: inline-block;
+    background-position: -2679px -89px;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+    margin-left: 4px;
+}
+
+.card-container{
+    padding-top: 24px;
+    padding-left: 15px;
+    padding-right: 20px;
+    display: -webkit-flex;
+    display: flexbox;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    -webkit-box-direction: normal;
+   
+}
+.card-container .card-section{
+    width: 100%;
+    display: block;
+}
+
+.card-container .card-section .card-list{
+
+    padding-left: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 0 -10px 0 3px;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.card-container .card-section .card-list .one-card{
+    width: 210px;
+    text-align: left;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 10px 30px;
+}
+
+.one-card .product-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 210px;
+    background-color: #282c3f;
+    -webkit-transition: visibility 0s, opacity .5s linear;
+    transition: visibility 0s, opacity .5s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+.one-card .product-left{
+    z-index: 1;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 250px;
+    font-size: 12px;
+    font-weight: 700;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 2px;
+    padding: 0 0 0 4px;
+    background-color: hsla(0, 0%, 100%, .8);
+}
+
+.one-card .product-left .star-icon-desk{
+    background: url(https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png);
+    background-size: 1404px 105px;
+    display: inline-block;
+    background-position: -171px -28px;
+    width: 24px;
+    height: 24px;
+    transform: scale(.55);
+    margin-left: -2px;
+
+}
+.one-card .product-left .rating-count{
+    display: flex;
+    padding-right: 4px;
+
+}
+.one-card .product-left .rating-count .separator{
+
+    font-size: 10px;
+    margin: -.5px 6px 0 -2px;
+}
+.one-card .top-right{
+    position: absolute;
+    background-color: #a9abb3;
+    border-radius: 2px;
+    top: 9px;
+    right: 10px;
+    padding: 0 2px;
+    font-size: 10px;
+    color: #fff;
+    z-index: 1;
+}
+.one-card .card-img-container{
+
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+
+}
+.one-card .card-img-container .card-image{
+    
+    position: relative;
+    width: 210px;
+    height: 280px;
+
+}
+.one-card .card-img-container .card-image .card-img-child{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(229, 241, 255);
+    height: 280px;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.one-card .card-img-container .card-image .card-img-child img{
+
+    width: 100%;
+    display: block;
+    -webkit-user-drag: none;
+    border-style: none;
+
+}
+.card-img-container .card-info{
+
+    position: relative;
+    z-index: 3;
+    background: #fff;
+    padding: 0 10px;
+    height: 100%;
+    margin-top: 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.card-info .product-name {
+
+    margin-top: inherit;
+    margin-block-start: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.card-info .product-desc {
+
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+    padding-left: 0;
+
+
+}
+
+.card-info .product-price {
+
+    margin: 10px 0 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #282c3f;
+    white-space: nowrap;
+}
+
+
+.product-price .money {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+
+}
+
+.product-price .strike {
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+
+}
+
+.product-price .offer {
+
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
